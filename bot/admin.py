@@ -10,7 +10,6 @@ from .database import db
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
-from .admin import add_user
 from .vars import ADMINS
 
 
