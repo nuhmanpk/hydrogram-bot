@@ -3,3 +3,4 @@ tgcrypto
 motor
 aiofiles
 dnspython
+python-decouple
