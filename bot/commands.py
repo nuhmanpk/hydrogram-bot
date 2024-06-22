@@ -1,6 +1,5 @@
 from .database import db
 from .admin import add_user
-from .translate.settings import settings
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from .buttons import HELP_BUTTONS, START_BUTTONS,ABOUT_BUTTONS,CLOSE_BUTTON
