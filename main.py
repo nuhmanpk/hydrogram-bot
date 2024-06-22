@@ -21,4 +21,4 @@ Bot = Client(
 )
 
 
-Bot.run()
+Bot.run(print('Bot is Cooking...'))
