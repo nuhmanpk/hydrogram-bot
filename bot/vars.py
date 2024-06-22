@@ -1,6 +1,6 @@
-import os
+from decouple import config
 
 
-ADMINS = set(int(x) for x in os.environ.get("ADMINS", "").split())
-DATABASE_URL = os.environ.get("DATABASE_URL")
-DATABASE_NAME = os.environ.get("DATABASE_NAME")
+ADMINS = config('ADMINS', cast=lambda v: set(int(x) for x in v.split()))
+DATABASE_URL = config('DATABASE_URL')
+DATABASE_NAME = config('DATABASE_NAME')
