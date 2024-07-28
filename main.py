@@ -18,7 +18,7 @@ API_HASH = config('API_HASH')
 
 
 Bot = Client(
-    "Crypto Bot",
+    "Pyrogram Bot",
     bot_token=BOT_TOKEN,
     api_id=API_ID,
     api_hash=API_HASH,
