@@ -23,7 +23,7 @@ Bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     plugins=dict(root="bot"),
-    in_memory=True,
+    # in_memory=True,
     # session_string=SESSION_STRING
 )
 
