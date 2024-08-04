@@ -1,5 +1,6 @@
 # Hydrogram-bot
-This is a template for a [Hydrogram](https://hydrogram.org/) bot using the Pyrogram framework. Follow the steps below to set up and run the bot.
+This is a template for a [Hydrogram](https://hydrogram.org/) bot using the Hyrogram framework a Pyrogram Alternative. Follow the steps below to set up and run the bot.
+For better developer experience install [this](https://marketplace.visualstudio.com/items?itemName=nuhmanpk.pyrosnippets) code snippet extenstion.
 
 # Prerequisites
   - Python 3.8 or higher
@@ -71,44 +72,47 @@ This is a template for a [Hydrogram](https://hydrogram.org/) bot using the Pyrog
 1. Install PM2
   Install PM2, a process manager for Node.js applications that can also be used to manage Python     processes:
 
-    ```sh
-    sudo npm install pm2 -g
-    ```
+   ```sh
+   sudo npm install pm2 -g
+   ```
 
 2. Start the Bot with PM2
-  Start your bot using PM2:
+    1. Start your bot using PM2:
 
-    ``sh
+    ```sh
     pm2 start python3 --name hydrogram-bot -- main.py
-    ``
-  To make PM2 start on system boot:
-
-    ``sh
+    ```
+    2. To make PM2 start on system boot:
+  
+    ```sh
     pm2 startup
     pm2 save
-    ``
+    ```
    
 3. Monitor and Manage Your Bot
   You can manage your bot with PM2 using the following commands:
 
-  List running processes:
-
-  ```sh
-  pm2 list
-  ```
-  Stop the bot:
-
-  ```sh
+    1. List running processes:
   
-  pm2 stop hydrogram-bot
-  ```
-  Restart the bot:
+    ```sh
+    pm2 list
+    ```
+    2. Stop the bot:
+  
+    ```sh
+    pm2 stop hydrogram-bot
+    ```
+    3. Restart the bot:
+  
+    ```sh
+    pm2 restart hydrogram-bot
+    ```
+  
+    4. View logs:
+  
+    ```sh
+    pm2 logs hydrogram-bot
+    ```
 
-  ```sh
-  pm2 restart hydrogram-bot
-  ```
-  View logs:
 
-  ```sh
-  pm2 logs hydrogram-bot
-  ```
+Happy Coding ... 🚀
