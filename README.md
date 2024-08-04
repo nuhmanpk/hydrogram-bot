@@ -1,2 +1,2 @@
-# pyrogram-bot
-Template for Pyrogram bot
+# Hydrogram-bot
+Template for Hydrogram bot 

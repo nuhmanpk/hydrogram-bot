@@ -7,9 +7,9 @@ import asyncio
 import datetime
 import aiofiles
 from .database import db
-from pyrogram import Client, filters
-from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
-from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
+from hydrogram import Client, filters
+from hydrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
+from hydrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 from .vars import ADMINS
 
 

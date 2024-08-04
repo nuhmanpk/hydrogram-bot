@@ -1,7 +1,7 @@
 from .database import db
 from .admin import add_user
-from pyrogram import Client
-from pyrogram.types import InlineKeyboardMarkup
+from hydrogram import Client
+from hydrogram.types import InlineKeyboardMarkup
 from .constants import (
     START_TEXT,
     HELP_TEXT,

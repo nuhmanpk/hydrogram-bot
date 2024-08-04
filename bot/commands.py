@@ -1,7 +1,7 @@
 from .database import db
 from .admin import add_user
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from hydrogram import Client, filters
+from hydrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from .buttons import HELP_BUTTONS, START_BUTTONS,ABOUT_BUTTONS,CLOSE_BUTTON
 from .constants import START_TEXT,HELP_TEXT,ABOUT_TEXT
 
