@@ -6,9 +6,7 @@ from .buttons import HELP_BUTTONS, START_BUTTONS,ABOUT_BUTTONS,CLOSE_BUTTON
 from .constants import START_TEXT,HELP_TEXT,ABOUT_TEXT
 
 @Client.on_message(filters.private & filters.command(["start"]))
-async def start(bot, message, cb=False):
-    if cb:
-        message = message.message
+async def start(bot, message):
     await add_user(message.from_user.id)
     await message.reply_text(
         text=START_TEXT,
@@ -17,10 +15,9 @@ async def start(bot, message, cb=False):
         quote=True,
     )
 
+
 @Client.on_message(filters.private & filters.command(["help"]))
-async def help(bot, message, cb=False):
-    if cb:
-        message = message.message
+async def help(bot, message):
     await add_user(message.from_user.id)
     await message.reply_text(
         text=HELP_TEXT,
@@ -31,9 +28,7 @@ async def help(bot, message, cb=False):
 
 
 @Client.on_message(filters.private & filters.command(["about"]))
-async def about(bot, message, cb=False):
-    if cb:
-        message = message.message
+async def about(bot, message):
     await add_user(message.from_user.id)
     await message.reply_text(
         text=ABOUT_TEXT,
